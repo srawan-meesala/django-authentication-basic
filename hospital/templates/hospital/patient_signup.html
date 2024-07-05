@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Signup</title>
+</head>
+<body>
+    <h2>Patient Signup</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Signup</button>
+    </form><br><br>
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>

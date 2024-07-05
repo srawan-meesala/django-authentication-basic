@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Dashboard</title>
+</head>
+<body>
+    <h2>Patient Dashboard</h2>
+    <div>
+        <p>Name: {{ user.first_name }} {{ user.last_name }}</p>
+        <p>Username: {{ user.username }}</p>
+        <p>Email: {{ user.email }}</p>
+        <p>Address: {{ user.address }}</p>
+        <p>City: {{ user.city }}</p>
+        <p>State: {{ user.state }}</p>
+    </div><br><br>
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>
